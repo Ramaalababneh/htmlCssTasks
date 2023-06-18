@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Form Examples </title>
+</head>
+<body>
+
+  <form>
+    <label for="fname">first name :</label> 
+      <br>
+    <input type="text" id="fname" value="">
+    <br>  
+    <label for="fname">last name :</label> 
+      <br>
+    <input type="text" id="lname" value="">  
+  </form>
+
+  <p>Choose your Gender</p>
+<form>
+  <input type="radio" id="female" name="g" value="Female">
+  <label for="female">Female</label>
+  <br>
+  <input type="radio" id="male" name="g" value="Male">
+  <label for="male">Male</label>
+  <!--for must be same as id-->
+  <!--in radio button name must be same in every element so i can choose only one -->
+  <!--if radio button name didnt have same in every element i can choose many choices -->
+  <!--value is important ,value can be sent in backend 
+      id conects the the form with the lable -->
+  <br>
+</form>
+
+<p> Choose Your interests </p>
+<form>
+    <input type="checkbox" id="int1" name="int1" value="Fashion">
+    <label for="int1">Fashion</label> 
+      <br>
+    <input type="checkbox" id="int1" name="int2" value="cooking">
+    <label for="int2">cooking</label> 
+       <br>
+    <input type="checkbox" id="int3" name="int3" value="art">
+    <label for="int3">panting</label> 
+      <br> 
+</form>
+
+<form>
+ <label for="colors"> choose a color</label>
+ <select id="color" name="color" size="1">
+   <option value="blue">blue</option>
+   <option value="pink">pink</option>
+   <option value="green">green</option>
+   <option value="red">red</option>
+ </select>
+</form>
+<br>
+
+<p> choose your programming language </p>
+<form>
+  <input list="pro" name="pro">
+  <datalist id="pro">
+    <option value="java">
+    <option value="c#">
+    <option value="c++">
+    <option value="paython">
+  </datalist>
+</form>
+
+  <br>
+<input type="button" onclick="alert('hey')" value="Submit">
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9QiE-M1LrZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+
+<audio controls autoplay>
+<source src="عبدالمجيد عبدالله -  شويخ من ارض مكناس (حفل البحرين)  2022.mp3" type="audio/mpeg"></audio>
+
+
+</body>
+
+</html>
