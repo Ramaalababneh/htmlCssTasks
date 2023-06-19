@@ -1,0 +1,36 @@
+div{
+    background-image:url("./background.jpg") ;
+    background-size:contain;
+
+}
+
+h1 {
+    font-family: "Lucida Console", "Courier New", monospace;}
+
+p {
+    font-size:larger;
+     text-align: center;
+     color: brown ;
+     font-weight:bold;
+     text-decoration: underline dotted;
+     text-transform: uppercase;
+     font-style: italic;
+}   
+
+h2
+{
+
+}
+ol li:nth-child(2) {
+    color: red;
+}
+
+ol li:first-of-type {
+    color:goldenrod;
+}
+
+#para1 {
+    text-align: center;
+    color: green;
+  }
+

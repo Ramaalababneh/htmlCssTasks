@@ -1,0 +1,31 @@
+div {
+    background-color: white;
+    border: 1px solid;
+    margin:10px;
+    padding: 10px;
+    
+    width: 60%;
+
+}
+body{
+   background-color: antiquewhite; 
+}
+.orange{
+background-color:orange
+}
+.yellow{
+background-color: yellow;
+}
+div:nth-of-type(2) p {
+    border: 3px dotted orange;
+    
+    
+}
+div:nth-of-type(2)  {
+    border: 3px dotted; 
+    
+    
+}
+div:nth-of-type(3){
+    color: blueviolet;
+}
