@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+
+    <style>
+div
+    {
+    border: 4px dotted ;
+    width: fit-content; /* make dotted border size fit to the content*/
+    }
+
+
+span
+    {
+    display: inline-block; /* split span into boxs */
+    background-color:red;
+    height: 80px;
+    width: 80px;
+    }
+
+.two
+    {
+    background-color:green;
+    }
+
+.relative
+    {
+    position: relative; /* move sec box bb3d left w top 15px*/
+    top: 15px;
+    left: 15px;
+    }
+
+div:last-of-type
+    {
+    position: relative;   /* move box2 above box1*/
+    }
+
+.absolute
+    {
+    position: absolute;  /* move box2 above box1*/
+    left: 12px;
+    bottom: -10px;
+    }
+
+    </style>
+</head>
+
+
+<body>
+
+    <p>position :  static</p>
+    <div >
+        <span>One</span>
+        <span class="two" style="background-color: green;">Two</span>
+        <span>Three</span>
+        <span>Four</span>
+    </div>
+
+
+
+    <p>position :  relative</p>
+    <div>
+        <span>One</span>
+        <span class="two relative">Two</span>
+        <span>Three</span>
+        <span>Four</span>
+    </div>
+
+
+
+    <p>position :  absolute</p>
+    <div >
+        <span>One</span>
+        <span class="two absolute">Two</span>
+        <span>Three</span>
+        <span>Four</span>
+    </div>
+</body>
+</html>
