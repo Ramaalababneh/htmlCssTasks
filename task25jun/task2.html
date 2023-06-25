@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0%{background-image:linear-gradient(green,rgb(18, 168, 213));left:500px; top:0;animation-timing-function: ease;}
+            12.5%{background-image: linear-gradient(lightblue,blue);}
+            25%{background-image: linear-gradient(blue,yellow);left:500px; top:300px;animation-timing-function: ease-in;}
+            37.5%{background-image: linear-gradient(yellow,orange);}
+            50%{background-image: linear-gradient(brown,yellow);left:0; top:300px;animation-timing-function: ease;}
+            62.5%{background-image: linear-gradient(green,rgb(18, 168, 213));}
+            75%{background-image: linear-gradient(lightblue,blue);left:0; top:0;animation-timing-function: ease-in-out;}
+            87.5%{background-image: linear-gradient(blue,yellow);}
+            100%{background-image: linear-gradient(brown,yellow);left:500px; top:0;animation-timing-function: ease-in;}
+        }
+        .square{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            background-image: linear-gradient(green,rgb(18, 168, 213));
+            animation: move 12s infinite ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square"></div>
+    </div>
+</body>
+</html>
