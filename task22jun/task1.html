@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-rows:  auto auto auto auto auto auto ;
+            height: 1000px;
+            width: 1450px;
+            gap:10px 20px;
+        }
+
+        .green
+        {
+            grid-column: 1/13;
+        }
+
+        .blue1
+        {   
+            grid-column: 1/5;
+        }
+
+        .blue2
+        {
+            grid-column: 5/9;
+        }
+
+        .blue3
+        {
+            grid-column: 9/13;
+        }
+
+        .gray1
+        {
+            width:1/2;
+            grid-column: 1/4;
+        }
+        .gray2
+        {
+            grid-column: 4/7;
+
+        }
+
+        .gray3
+        {
+            grid-column: 7/10;
+
+        }
+
+        .gray4
+        {
+            grid-column: 10/13;
+
+        }
+
+
+        @media screen and (max-width:768px) and (min-width:481px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                grid-template-rows: repeat(6,auto);
+                height: 100%;
+                width: 100%;
+                gap: 8px 20px;
+                padding: 10px;
+            }
+            .green{
+                grid-column: 1/13;
+                height: 150px;
+                margin-bottom: 5px;
+            }
+            .blue1{
+                grid-column: 1/13;
+                height: 100px;
+            }
+            .blue2{
+                grid-column: 1/13;
+                height: 100px;
+            }
+            .blue3{
+                grid-column: 1/13;
+                height: 100px;
+            }
+            .gray1{
+                grid-column: 1/7;
+                height: 70px;
+            }
+            .gray2{
+                grid-column: 7/13;
+                height: 70px;
+            }
+            .gray3{
+                grid-column: 1/7;
+                height: 70px;
+            }
+            .gray4{
+                grid-column: 7/13;
+                height: 70px;
+            }
+        }
+
+
+
+        @media screen and (max-width:480px) {
+            .container{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(7,auto);
+                height: 100%;
+                width: 100%;
+                gap: 8px 20px;
+                padding: 10px;
+            }
+            .green{
+                grid-column: 1/13;
+                height: 150px;
+                margin-bottom: 5px;
+            }
+            .blue1{
+                grid-column: 1/13;
+                height: 100px;
+            }
+            .blue2{
+                grid-column: 1/13;
+                height: 100px;
+            }
+            .blue3{
+                grid-column: 1/13;
+                height: 100px;
+            }
+            .gray1{
+                grid-column: 1/13;
+                height: 70px;
+            }
+            .gray2{
+                grid-column: 1/13;
+                height: 70px;
+            }
+            .gray3{
+                grid-column: 1/13;
+                height: 70px;
+            }
+            .gray4{
+                grid-column: 1/13;
+                height: 70px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+  <div class="container">
+        <div class="green" style="background-color: olive;"> </div>
+        <div class="blue1" style="background-color: aqua;"></div>
+        <div class="blue2" style="background-color: aqua;"></div>
+        <div class="blue3" style="background-color: aqua;"></div>
+        <div class="gray1" style="background-color: gray;"></div>
+        <div class="gray2" style="background-color: gray;"></div>
+        <div class="gray3" style="background-color: gray;"></div> 
+        <div class="gray4" style="background-color: gray;"></div>   
+    </div>    
+</body>
+</html>
